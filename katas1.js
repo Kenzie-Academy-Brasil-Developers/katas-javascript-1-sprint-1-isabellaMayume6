@@ -1,17 +1,9 @@
-function showResults(resultado){
-  let elemento = document.createElement("div")
-  let texto = document.createTextNode(resultado)
-  elemento.appendChild(texto)
-  document.body.appendChild(elemento)
-}
-
 function oneThroughTwenty() {
 let result = []    
 for( let count = 1;count <= 20;count++){
   result.push(count)
-}
-  return showResults(result)    
-}oneThroughTwenty()
+}return result    
+}console.log(oneThroughTwenty())
 
 function evensToTwenty() {
   let result = []
@@ -19,8 +11,8 @@ function evensToTwenty() {
     if(count%2===0){
       result.push(count)
     }
-  }return showResults(result)    
-}evensToTwenty()
+  }return result    
+}console.log(evensToTwenty())
 
 function oddsToTwenty() {
   let result = [] 
@@ -28,8 +20,8 @@ function oddsToTwenty() {
     if(count%2!==0){
       result.push(count)
     }
-  }return showResults(result)    
-}oddsToTwenty()
+  }return result
+}console.log(oddsToTwenty())
 
 function multiplesOfFive() {
  let result = []
@@ -37,8 +29,8 @@ function multiplesOfFive() {
    if (count%5===0){
      result.push(count)
   }
- }return showResults(result)    
-}multiplesOfFive()
+ }return result    
+}console.log(multiplesOfFive())
 
 
 function squareNumbers() {
@@ -46,31 +38,31 @@ function squareNumbers() {
   for(let count=0;count<=10;count++){
     let multipli = count * count
     result.push(multipli)
-  }return showResults(result)    
-}squareNumbers()
+  }return result   
+}console.log(squareNumbers())
 
 function countingBackwards() {
   let result = []
   for(let count =20;count>0;count--){
     result.push(count)
-  }return showResults(result)    
-}countingBackwards()
+  }return result   
+}console.log(countingBackwards())
 
 function evenNumbersBackwards() {
   let result = []
   for(let count = 20;count>1;count--){
     if(count%2==0){
     result.push(count)}
-  }return showResults(result)    
-}evenNumbersBackwards()
+  }return result   
+}console.log(evenNumbersBackwards())
 
 function oddNumbersBackwards() {
   let result=[]
   for(let count=20;count>1;count--){
     if(count%2!==0){
     result.push(count)}
-  }return showResults(result)    
-}oddNumbersBackwards()
+  }return result    
+}console.log(oddNumbersBackwards())
 
 function multiplesOfFiveBackwards() {
   let result = []
@@ -78,13 +70,13 @@ function multiplesOfFiveBackwards() {
     if(count%5===0){
       result.push(count)
     }
-  }return showResults(result)    
-}multiplesOfFiveBackwards()
+  }return result    
+}console.log(multiplesOfFiveBackwards())
 
 function squareNumbersBackwards() {
   let result = []
   for(let count=10;count>0;count--){
     let multipli = count * count
     result.push(multipli)
-  }return showResults(result)    
-}squareNumbersBackwards()
+  }return result    
+}console.log(squareNumbersBackwards())
